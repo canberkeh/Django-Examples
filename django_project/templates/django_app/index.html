@@ -1,23 +1,44 @@
-<<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+{% load static %}
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Crypto Papers</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        {% comment %} <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"> MAY DELETE AFTER {% endcomment %}
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     </head>
     <body>
-        <h1> Home Page </h1>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        <script src="" async defer></script>
+        <header>
+            <div class="navbar navbar-expand-sm bg-primary navbar-dark"> 
+                <div class="container">
+                    <a href="/" class="navbar-brand">CrytoPapers</a>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav item">
+                            <a href="#" class="nav-link">White Papers</a>                        
+                        </li> 
+                        <li class="nav item">
+                            <a href="#" class="nav-link">Links</a>                        
+                        </li>
+                        <li class="nav item">
+                            <a href="#" class="nav-link">Crypto Market</a>                        
+                        </li> 
+                    </ul>
+
+                </div>
+            </div>
+        </header>
+
+        <main></main>
+
+        <footer></footer>
+        <h1> Home Page </h1> 
+        {% comment %} <script src="{% static 'css/JAVASCRITP LOCATION HERE %}"></script> **** TO USE JAVASCRIPT HERE ****{% endcomment %}
+
+        <script> </script>
     </body>
 </html>
