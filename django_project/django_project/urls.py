@@ -16,10 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls import url
-from homepage.views import homepage
+from django_app.views import homepage
+from django_app.views import white_papers
 
 urlpatterns = [
     path('admin/', admin.site.urls),    
     url(r'^$', homepage),
-    url(r'^crypto/', include('django_app.urls')),
+    url('white_papers/', white_papers),
 ]

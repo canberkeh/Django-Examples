@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Crypto</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1>Crypto<h1/>
+         {% for crypto in Cryptos %}
+            {{ crypto.coin }}<br>
+            {{ crypto.symbol }}<br>
+            {{ crypto.category }}<br>
+            {{ crypto.content }}<br>
+            {{ crypto.author }}<br>
+            {{ crypto.publish }}<br>
+        {% endfor %}
+        <script src="" async defer></script>
+    </body>
+</html>

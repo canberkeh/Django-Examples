@@ -16,16 +16,16 @@
         <header>
             <div class="navbar navbar-expand-sm bg-primary navbar-dark"> 
                 <div class="container">
-                    <a href="/" class="navbar-brand">CrytoPapers</a>
+                    <a href="/" class="navbar-brand">Homepage</a>
                     <ul class="navbar-nav mr-auto">
                         <li class="nav item">
                             <a href="#" class="nav-link">White Papers</a>                        
                         </li> 
                         <li class="nav item">
-                            <a href="#" class="nav-link">Links</a>                        
+                            <a href="#" class="nav-link">Crypto Market</a>                        
                         </li>
                         <li class="nav item">
-                            <a href="#" class="nav-link">Crypto Market</a>                        
+                            <a href="#" class="nav-link">About</a>                        
                         </li> 
                     </ul>
 
@@ -37,7 +37,16 @@
 
         <footer></footer>
         <h1> Home Page </h1> 
-        {{ isim }}
+        {% for crypto in cryptos %}
+            {{ crypto.id }}
+            {{ crypto.coin }}<br>
+            {{ crypto.symbol }}<br>
+            {{ crypto.category }}<br>
+            {{ crypto.content }}<br>
+            {{ crypto.author }}<br>
+            {{ crypto.publish }}<br>
+
+        {% endfor %}
         {% comment %} <script src="{% static 'css/JAVASCRITP LOCATION HERE %}"></script> **** TO USE JAVASCRIPT HERE ****{% endcomment %}
 
         <script> </script>
