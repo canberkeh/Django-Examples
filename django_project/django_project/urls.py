@@ -15,9 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf.urls import url
+from homepage.views import homepage
 
 urlpatterns = [
-    
     path('admin/', admin.site.urls),    
-    path('', include('django_app.urls')),
+    url(r'^$', homepage),
+    url(r'^crypto/', include('django_app.urls')),
 ]

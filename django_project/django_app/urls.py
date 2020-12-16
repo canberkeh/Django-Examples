@@ -1,6 +1,12 @@
-from django.urls import path
-from . import views
+from django.urls import path, include
+from django.conf.urls import url
+from .views import *
 
-urlpatterns = [
-    path('', views.index, name='index'),
+urlpatterns = [ 
+    url(r'^index/$', crypto_index),
+    url(r'^detail/$', crypto_detail),
+    url(r'^create/$', crypto_create),
+    url(r'^update/$', crypto_update),
+    url(r'^delete/$', crypto_delete)
+
 ]
