@@ -11,7 +11,8 @@ def white_papers(request):
     return render(request, 'django_app/white_papers.html', {'Cryptos': crypto_models})
 
 def crypto_detail(request):
-    return render(request, 'django_app/crypto_detail.html')
+    crypto_details = Crypto.objects.values('content') # NOT WORKING
+    return render(request, 'django_app/crypto_detail.html', {'Cryptos': crypto_detail})
 
 # def whitepapers(request):
 #     return render(request, 'whitepapers/whitepapers.html')
